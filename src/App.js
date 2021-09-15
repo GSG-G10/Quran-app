@@ -4,12 +4,11 @@ import LangsSelect from './Components/LangsSelect';
 
 class App extends Component {
   state={
-    langValue: 'Arabic',
-
+    edition: 'Arabic',
   }
-  handleChange = (e) => {
-    console.log(e.target);
-  }
+  handleLanguage = (newValue) => {
+    return this.setState({edition: newValue.value})
+  };
   render() {
     return (<div className="App">
         Hello
@@ -17,9 +16,7 @@ class App extends Component {
             <legend>
                 Filter
             </legend>
-            <LangsSelect onChange={this.handleChange} />
-            <LangsSelect onChange={this.handleChange} />
-
+            <LangsSelect onChange={this.handleLanguage} />
         </fieldset>
       </div>
     );
