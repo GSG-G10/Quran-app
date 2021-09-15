@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import LangsSelect from './Components/LangsSelect';
+import ChaptersList from './Components/ChaptersList';
 
 class App extends Component {
   state={
+    selectedChapter: 1,
     edition: 'ara-kingfahadquranc-la',
   }
   handleLanguage = (newValue) => {
     return this.setState({edition: newValue.value})
+  };
+  handleChange = (e, key) => {
+    this.setState({[key]: e.value})
   };
   render() {
     return (<div className="App">
@@ -24,6 +29,7 @@ class App extends Component {
                 Filter
             </legend>
             <LangsSelect onChange={this.handleLanguage} />
+            <ChaptersList handleChange={this.handleChange}/>
         </fieldset>
         <section className='data-section'>
           <div className='data-container'>
