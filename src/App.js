@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import LangsSelect from './Components/LangsSelect';
 import ChaptersList from './Components/ChaptersList';
+import VersesList from './Components/VersesList';
 
 class App extends Component {
   state={
     selectedChapter: 1,
+    selectedVerse: 1,
     edition: 'ara-kingfahadquranc-la',
   }
   handleLanguage = (newValue) => {
@@ -15,6 +17,8 @@ class App extends Component {
     this.setState({[key]: e.value})
   };
   render() {
+    const selectedChapter = this.state.selectedChapter;
+
     return (<div className="App">
       <header>
         <h1>
@@ -30,6 +34,7 @@ class App extends Component {
             </legend>
             <LangsSelect onChange={this.handleLanguage} />
             <ChaptersList handleChange={this.handleChange}/>
+            <VersesList handleChange={this.handleChange} selectedChapter={selectedChapter}/>
         </fieldset>
         <section className='data-section'>
           <div className='data-container'>
