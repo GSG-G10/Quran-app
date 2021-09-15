@@ -14,7 +14,7 @@ function ChaptersList({handleChange}) {
 
   return (
     // create select element and its options
-    <Creatable options={options} onChange={(e) => handleChange(e, "selectedChapter")} />
+    <Creatable options={options} placeholder="Chapter" onChange={(e) => handleChange(e, "selectedChapter")} />
   );
 }
 
