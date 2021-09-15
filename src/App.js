@@ -27,17 +27,13 @@ class App extends Component {
         </fieldset>
         <section className='data-section'>
           <div className='data-container'>
+            <h3>
+              سورة الفاتحة
+            </h3>
             <ul>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
-              <li> الحمد لله رب العالمين </li>
+              <li> 
+                <span> 4 </span>
+               - الحمد لله رب العالمين</li>
             </ul>
           </div>
         </section>
