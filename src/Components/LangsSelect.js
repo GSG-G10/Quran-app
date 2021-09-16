@@ -4,6 +4,7 @@ const LangsSelect = (props) => {
     const options = [] // options data will be pushed here
     fetchEditions()
     .then(data => {
+        // eslint-disable-next-line array-callback-return
         return data.map(ele => {
             const option = { // set the value and label for the option
                 value: ele.name,
@@ -16,7 +17,7 @@ const LangsSelect = (props) => {
         console.log(err.message);
     })
 return (// create select element and its options
-    <Creatable options={options} onChange={props.onChange} /> 
+    <Creatable options={options} placeholder='language - edition' onChange={(e) => props.onChange(e, 'edition')} /> 
 
 )
 }
