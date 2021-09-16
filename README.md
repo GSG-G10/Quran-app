@@ -1,5 +1,5 @@
 # Quran App
-
+<a href='https://awesome-kirch-b9ad2b.netlify.app/'> Live Link >></a>
 ## Team Members
 * Ahmad Sabbah
 * Asmaa Alnajjar
