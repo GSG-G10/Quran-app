@@ -6,7 +6,7 @@ function ChaptersList({handleChange}) {
   chapters.forEach(({ id, arabicChapters, englishChapters, chaplength }) => {
     const option = {
       // set the value and label for the option
-      value: arabicChapters,
+      value: id,
       label: `${chaplength} - ${arabicChapters} (${englishChapters})`,
     };
     options.push(option);

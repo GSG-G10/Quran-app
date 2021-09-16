@@ -1,11 +1,13 @@
 import Creatable from 'react-select/creatable';
 import fetchEditions from './fetchEditions';
+
 const LangsSelect = (props) => {
     const options = [] // options data will be pushed here
     fetchEditions()
     .then(data => {
         // eslint-disable-next-line array-callback-return
-        return data.map(ele => {
+        console.log(data);
+        return data.forEach(ele => {
             const option = { // set the value and label for the option
                 value: ele.name,
                 label: `${ele.language} - ${ele.author}`
