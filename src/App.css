@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App{
+  /* background-color: #f0ead2; */
+}
 header {
   display: flex;
   justify-content: flex-end;
@@ -20,4 +23,32 @@ h1 {
 }
 .hint {
 
+}
+
+.filter{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.list{
+  width:30%;
+}
+
+.data-section{
+  background-color: #fff;
+  width: 70%;
+  margin: auto;
+  padding: .5rem;
+}
+
+.versesList{
+  list-style-type: none;
+  padding: .5rem 0;
+  font-size: 18px;
+}
+.VerseNum{
+  color: #582f0e;
+  font-weight: 700;
 }
