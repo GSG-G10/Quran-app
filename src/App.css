@@ -3,26 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App{
-  /* background-color: #f0ead2; */
-}
+
 header {
   display: flex;
   justify-content: flex-end;
-  height: 20vh;
-  background-image: url('https://www.aljazeera.net/wp-content/uploads/2020/05/ddd7a99b-b38e-4ba2-983e-44c0fbc6bcdd.jpeg?resize=770%2C513');
+  height: 60vh;
+  background-image: url('https://islom.uz/img/section/2020/05/1589621530.jpg');
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 30px;
+  padding-top: 1rem;
   padding-right: 30px;
 }
+.navBar{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logo{
+  width: 15%;
+  height: 20%;
+}
 h1 {
+  padding-top: 17rem;
   font-size: 50px;
   color: #fff;
 }
 .hint {
-
+  text-align: center;
+  font-size: large;
+  color: #6c584c;
+  padding: 1rem;
 }
 
 .filter{
@@ -35,7 +45,18 @@ h1 {
 .list{
   width:30%;
 }
-
+h2{
+  text-align: center;
+  color: #582f0e;
+}
+.bismAllah-container{
+  display: flex;
+  justify-content: center;
+}
+.bismAllah{
+  width: 30%;
+  margin: auto;
+}
 .data-section{
   background-color: #fff;
   width: 70%;
@@ -47,6 +68,7 @@ h1 {
   list-style-type: none;
   padding: .5rem 0;
   font-size: 18px;
+  text-align: justify;
 }
 .VerseNum{
   color: #582f0e;

@@ -4,6 +4,7 @@ import LangsSelect from "./Components/LangsSelect";
 import ChaptersList from "./Components/ChaptersList";
 import VersesList from "./Components/VersesList";
 import { chapters } from "./data";
+import bismAllah from "./bismAllah.png"
 
 class App extends Component {
   state = {
@@ -63,7 +64,9 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Holy Quran | القرآن الكريم</h1>
+          <nav className="navBar">
+            <h1>Holy Quran | القرآن الكريم</h1>
+          </nav>
         </header>
         <div className="hint">
           <p>
@@ -85,6 +88,9 @@ class App extends Component {
         <section className="data-section">
           <div className="data-container">
             <h2> {chapters[(selectedChapter - 1)].arabicChapters} </h2>
+            <div className="bismAllah-container">
+              <img src={bismAllah} alt="bismAllah" className="bismAllah"></img>
+            </div>
             {chapter.map((ele, index) => {
               const { text, verse } = ele;
               return (
